@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="formulari" action="process-form.php" method="post">
+    <!-- Provincia -->
+    <h4>Lloc de residència</h4>
+    <label for="provincia">Provincia:</label>
+    <select id="provincia" name="provincia">
+      <option value="barcelona">Barcelona</option>
+      <option value="tarragona">Tarragona</option>
+      <option value="girona">Girona</option>
+      <option value="lleida">Lleida</option>
+    </select>
+    <!-- Referencia -->
+    <h4>Com ens has conegut?</h4>
+    <input type="radio" id="cercador" name="referencia" value="cercador" />
+    <label for="cercador">Cercador d’Internet</label>
+    <input type="radio" id="altres" name="referencia" value="altres" />
+    <label for="altres">Altres</label>
+    <!-- Termes i condicions -->
+    <h4>Termes i condicions</h4>
+    <input type="checkbox" id="termes" name="termes" value="si" />
+    <label for="termes">Accepto els termes i condicions</label>
+    
+    <br />
+    <input type="submit" id="enviar" name="enviar" value="Enviar formulari" />
+  </form>
+    
+</body>
+</html>
