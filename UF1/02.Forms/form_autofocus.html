@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulari" action="#" method="post">
+        <fieldset>
+        <legend>Informacio personal</legend>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" placeholder="Nom" autofocus tabindex="1" required />
+        <br />
+        <label for="cognom">Cognom:</label>
+        <input type="text" id="cognom" name="cognom" placeholder="Cognom" tabindex="3" />
+        </fieldset>
+        <br />
+        <fieldset>
+        <legend>Informacio del compte</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Adreça electrònica" tabindex="2" />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Mínim 8 caràcters" tabindex="4"/>
+        </fieldset>
+        <br />
+        <input type="submit" id="enviar" name="enviar" value="Enviar" />
+        </form>
+</body>
+</html>
