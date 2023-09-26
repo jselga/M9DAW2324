@@ -1,0 +1,32 @@
+
+h1 {
+    color: orange;
+}
+
+
+/*provant coses amb CSS..*/
+
+p {
+    color: #6daedb;
+    font-size: 16pt;
+}
+.capçalera{
+    color: red;
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+#primera-noticia{
+    color: black;
+}
+#segona-noticia{
+
+    font-size: 12pt;
+}
+.warning{
+    color: red;
+}
+.autor,
+.data {
+    text-decoration: underline;
+    color: rgb(68, 234, 22);
+}
