@@ -1,0 +1,19 @@
+.div-1, .div-2{
+    background-color: red; 
+    /* display      : block; PER DEFECTE - div tenen display block */  
+    
+}
+.imatge{
+    width: 150px;
+    height: 150px; 
+    /* display      : inline; PER DEFECTE - img tenen display inline */  
+}
+.span-1{
+    background-color: rgb(30, 182, 131);
+       /* display      : inline; PER DEFECTE - span tenen display inline */  
+}
+.span-2{
+    background-color: rgb(136, 182, 30);
+       /* display      : inline; PER DEFECTE - span tenen display inline */  
+       display: block;
+}
