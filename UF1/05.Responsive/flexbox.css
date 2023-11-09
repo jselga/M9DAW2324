@@ -1,0 +1,25 @@
+/* Video de Open BootCamp explicatiu sobre flexbox avançat https://www.youtube.com/watch?v=I-tYGpo2NJE */
+.contenidor {
+    background-color: yellow;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    min-height: 5rem;
+    /*  flex-direction: column; */
+    /* eix principal */
+    justify-content: space-evenly;
+    /* eix secundari */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    box-sizing: border-box;
+    background-color: salmon;
+    padding: 0.25rem;
+    width: 10rem;
+}
+
+.item2 {
+    align-self: stretch;
+}
