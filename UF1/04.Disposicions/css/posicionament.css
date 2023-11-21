@@ -25,8 +25,8 @@ div{
    /* Pos. Absolut Es posiciona en relacio a l'element ancestre */
 .absolute{
     position: absolute;
-    bottom:30px;
-    right: 0px;
+    bottom:20px;
+    right: 30px;
 }
 .relative.container{
     width: 300px;
