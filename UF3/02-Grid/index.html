@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid System</title>
+    <title>Top Programació</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="bg-secondary-subtle">
     <div class="container-fluid rectangleTop">
         <h1>Notícies sobre Llenguatges de Programació</h1>
     </div>
@@ -19,13 +19,36 @@
         <!-- NOTICES PRINCIPALS -->
         <article class="container">
             <div class="row">
-                <div class="col-sm rectangleTop">
-                    <h2>Python Continua Dominant</h2>
-                    <p>Python continua sent un dels llenguatges de programació més populars. El seu creixement
-                        s'atribueix a la seva simplicitat i versatilitat.</p>
+                <div class="col-sm">
+                    <div class="card">
+                        <img src="./img/img01.jpg" class="card-img-top" alt="Python">
+                        <div class="card-body">
+                          <h5 class="card-title">Python Continua Dominant</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Python continua sent un dels llenguatges de programació més populars.</h6>
+                          <p class="card-text">El creixement de <span class="fw-bold">Python</span>
+                            s'atribueix a la seva simplicitat i versatilitat. Així com els seus usus en <span class="fw-bold fst-italic">IA</span> i <span class="fw-bold fst-italic">Bigdata</span></p>
+                          <a href="#" class="btn btn-primary">Més info</a>
+                        </div>
+                      </div>
                 </div>
 
-                    <div class="col-sm rectangle60">
+                    <div class="col-sm">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./img/theimitationgame.jpg" class="img-fluid rounded-start" alt="Imitation Game">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">The Imitation Game (Desxifrant l'Enigma)</h5>
+                                  <p class="card-text">The Imitation Game és un drama històric de 2014 sobre el criptògraf Alan Turing, figura clau en el desxifrat de la màquina Enigma durant la Segona Guerra Mundial, que més tard va ser perseguit per la seva homosexualitat.</p>
+                                  <button type="button" class="btn btn-dark"
+                                  onclick="window.location.href='https://ca.wikipedia.org/wiki/The_Imitation_Game_(Desxifrant_l%27Enigma)';">Més info</button>
+                                  <p class="card-text"><small class="text-body-secondary">Actualitzat fa 3 minuts</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         <h2>JavaScript Evoluciona Amb ES2022</h2>
                         <p> Les últimes millores en ECMAScript 2022 porten noves funcionalitats a JavaScript, millorant
                             la seva capacitat per al desenvolupament web modern.</p>
