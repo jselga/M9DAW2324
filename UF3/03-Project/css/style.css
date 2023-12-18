@@ -4,3 +4,7 @@ ul.square {
   .verySmall{
     font-size: 0.8em;
 }
+.separated{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}

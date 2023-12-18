@@ -6,19 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <title>M9: Interfícies Web</title>
 </head>
 
 <body class="bg-success-subtle">
 
-  <nav class="navbar bg-success navbar-expand-lg" data-bs-theme="dark">
+  <nav class="navbar bg-success fixed-top navbar-expand-lg" data-bs-theme="dark">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand p-0">
         <img src="./img/logo_web.png" alt="Logo HTML & CSS">
         <span class="align-middle">M9-UF1: Disseny de la interfície. Estils</span>
-        
+
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,67 +26,129 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-                
+
           <li class="nav-item">
             <a class="nav-link active" href="#">Mòdul</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">HTML</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              HTML
+            </a>
+            <ul class="dropdown-menu bg-success">
+
+              <li><a class="dropdown-item" href="#">Etiquetes principals</a></li>
+              <li><a class="dropdown-item" href="#">Exercicis HTML </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">HTML Quiz </a></li>
+
+            </ul>
+          </li>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Formularis
+            </a>
+            <ul class="dropdown-menu bg-success">
+
+              <li><a class="dropdown-item" href="#">Estructrua de formularis</a></li>
+              <li><a class="dropdown-item" href="#">Tipus de formularis </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Implementació d'un formulari </a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CSS
+            </a>
+            <ul class="dropdown-menu bg-success">
+
+              <li><a class="dropdown-item" href="#">The Box Model</a></li>
+              <li><a class="dropdown-item" href="#">OverFlow</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Posicionament</a></li>
+              <li><a class="dropdown-item" href="#">Flexbox </a></li>
+
+            </ul>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Formularis</a>
+            <a class="nav-link border-end border-1 border-light border-opacity-25" href="#">Planificació</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Google Fonts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border-end" href="#">Bootstap Icons</a>
+          </li>
+          <div class=" vr text-light"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Repositori Git</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">CSS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Planificació</a>
-          </li>
-   
         </ul>
       </div>
 
     </div>
   </nav>
-  <main class="container">
+  <main class="container separated">
     <div class="row">
 
       <div class="col">
         <div class="card p-3 mb-3">
           <div class="card-body">
             <h3>Eines que utilitzarem</h3>
-            <p>Per poder començar a treballar és important preparar les eines necessàries. Pel disseny d’interfícies web necessitem un editor de codi o IDE amb reconeixement de codi i complements adients per a poder treballar còmodament amb <span class="fw-bold">HTML i CSS</span>. També serà interessant comptar amb eines per a poder planificar els esbossos i maquetes. Finalment, com a tot procés de desenvolupament serà important tenir un sistema de control de versions (VCS).</p>
+            <p>Per poder començar a treballar és important preparar les eines necessàries. Pel disseny d’interfícies web
+              necessitem un editor de codi o IDE amb reconeixement de codi i complements adients per a poder treballar
+              còmodament amb <span class="fw-bold">HTML i CSS</span>. També serà interessant comptar amb eines per a
+              poder planificar els esbossos i maquetes. Finalment, com a tot procés de desenvolupament serà important
+              tenir un sistema de control de versions (VCS).</p>
             <h5><i class="bi bi-1-circle-fill text-success"></i> Visual Studio Code</h5>
-            <p>Entorn de desenvolupament versàtil utilitzat per la comunitat per diferents llenguatges de programació i de marques.</p>
+            <p>Entorn de desenvolupament versàtil utilitzat per la comunitat per diferents llenguatges de programació i
+              de marques.</p>
             <a class="btn btn-primary" href="https://code.visualstudio.com/" role="button"> VS code</a>
             <h5 class="mt-3"><i class="bi bi-2-circle-fill text-success"></i> Plugins</h5>
             <p>Instil·lació de plugins necessaris dins de VS Code. Faran que la nostra feina sigui més àgil i fàcil.</p>
-            <a class="btn btn-danger" data-bs-toggle="collapse"  href="#collapseExample" role="button"> Més Info</a>
+            <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample" role="button"> Més Info</a>
             <div class="collapse my-1" id="collapseExample">
               <div class="card card-body">
                 <ul class="square">
-                  <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" class="link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Live Server, servidor local en temps real</a></li>
-                  <li><a href="https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets" class="link-underline link-underline-opacity-0 link-underline-opacity-50-hover">HTML snippet, per l’escriptura ràpida de codi</a></li>
-                  <li><a href="https://marketplace.visualstudio.com/items?itemName=anteprimorac.html-end-tag-labels" class="link-underline link-underline-opacity-0 link-underline-opacity-50-hover">HTML End Tag Labels, ens ajudarà a visualitzar bé l’estructura de l’HTML</a></li>
+                  <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                      class="link-underline link-underline-opacity-0 link-underline-opacity-50-hover">Live Server,
+                      servidor local en temps real</a></li>
+                  <li><a href="https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets"
+                      class="link-underline link-underline-opacity-0 link-underline-opacity-50-hover">HTML snippet, per
+                      l’escriptura ràpida de codi</a></li>
+                  <li><a href="https://marketplace.visualstudio.com/items?itemName=anteprimorac.html-end-tag-labels"
+                      class="link-underline link-underline-opacity-0 link-underline-opacity-50-hover">HTML End Tag
+                      Labels, ens ajudarà a visualitzar bé l’estructura de l’HTML</a></li>
                 </ul>
-              
+
               </div>
             </div>
-    
-            <h5 class="mt-3" ><i class="bi bi-3-circle-fill text-success"></i> Wireframes i Mockups</h5>
-            <p>Abans de codificar és important comptar amb un Wireframe i un Mockup inicials. Figma ens pot ser de gran ajuda</p>
+
+            <h5 class="mt-3"><i class="bi bi-3-circle-fill text-success"></i> Wireframes i Mockups</h5>
+            <p>Abans de codificar és important comptar amb un Wireframe i un Mockup inicials. Figma ens pot ser de gran
+              ajuda</p>
             <a class="btn btn-primary" href="https://www.figma.com/" role="button"> Figma</a>
             <h5 class="mt-3"><i class="bi bi-4-circle-fill text-success"></i> Control de versions Git i GitHub</h5>
-            <p>En qualsevol desenvolupament és important tenir control de versions així com col·laboració entre diferents persones. Git i un servei de repositoris en línia com GitHub ens ho permeten. </p>
+            <p>En qualsevol desenvolupament és important tenir control de versions així com col·laboració entre
+              diferents persones. Git i un servei de repositoris en línia com GitHub ens ho permeten. </p>
             <a class="btn btn-primary" href="https://git-scm.com/" role="button"> Git</a>
             <a class="btn btn-secondary" href="https://github.com/" role="button"> GitHub</a>
           </div>
-         
+
         </div>
-        
+
       </div>
       <div class="col">
         <div class="card">
@@ -95,9 +157,12 @@
             <h5 class="card-title">UF1: Disseny de la interfície. Estils</h5>
             <h6 class="card-subtitle text-muted"> HTML I CSS</h6>
 
-            <p class="card-text mt-2">RA1. Planifica la creació d’una interfície web valorant i aplicant especificacions de disseny.</p>
+            <p class="card-text mt-2">RA1. Planifica la creació d’una interfície web valorant i aplicant especificacions
+              de disseny.</p>
             <p class="card-text">RA2. Crea interfícies web homogènies definint i aplicant estils.</p>
-            <p class="card-text">En aquesta unitat formativa es treballarà la planificació d’interfícies web seguint el flux de disseny de l’esbós (Wireframe) passant per la maqueta (Mockup) i acabant amb la codificació mitjançant HTML i CSS</p>
+            <p class="card-text">En aquesta unitat formativa es treballarà la planificació d’interfícies web seguint el
+              flux de disseny de l’esbós (Wireframe) passant per la maqueta (Mockup) i acabant amb la codificació
+              mitjançant HTML i CSS</p>
             <a class="btn btn-danger" href="#" role="button">Veure UF1</a>
           </div>
           <ul class="list-group list-group-flush">
@@ -132,67 +197,85 @@
       <div class="col">
         <div class="card">
           <ul class="list-group list-group-flush">
-          
+
             <li class="list-group-item">
               <div class="row">
-                <div class="col-2 align-self-center"><img src="./img/w3schools.png" alt="logo html" width="35px" height="35px"></div>
+                <div class="col-2 align-self-center"><img src="./img/w3schools.png" alt="logo html" width="35px"
+                    height="35px"></div>
                 <div class="col-10">
-                  <div class="row fw-semibold"><a href="https://www.w3schools.com/html/" class="p-0 link-underline link-underline-opacity-25 stretched-link">HTML Tutorial W3Schools</a></div>
-                  <div class="row"><small class="p-0 verySmall text-body-secondary">Tutorial pas a pas amb exemples HTML</small></div>
-                </div>
-              </div>
-              </li>
-              <li class="list-group-item">
-                <div class="row">
-                  <div class="col-2 align-self-center"><img src="./img/w3schools.png" alt="logo html" width="35px" height="35px"></div>
-                  <div class="col-10">
-                    <div class="row fw-semibold"><a href="https://www.w3schools.com/css/" class="p-0 link-underline link-underline-opacity-25 stretched-link">CSS Tutorial W3Schools</a></div>
-                    <div class="row"><small class="p-0 verySmall text-body-secondary">Tutorial pas a pas amb exemples CSS</small></div>
+                  <div class="row fw-semibold"><a href="https://www.w3schools.com/html/"
+                      class="p-0 link-underline link-underline-opacity-25 stretched-link">HTML Tutorial W3Schools</a>
                   </div>
+                  <div class="row"><small class="p-0 verySmall text-body-secondary">Tutorial pas a pas amb exemples
+                      HTML</small></div>
                 </div>
-                </li>
-            <li class="list-group-item">
-            <div class="row">
-              <div class="col-2 align-self-center"><img src="./img/logo01.png" alt="logo html"></div>
-              <div class="col-10">
-                <div class="row fw-semibold"><a href="#" class="p-0 link-underline link-underline-opacity-25 stretched-link">Mozilla Web Docs HTML</a></div>
-                <div class="row"><small class="p-0 verySmall text-body-secondary">Documentació amb exemples HTML</small></div>
               </div>
-            </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-2 align-self-center"><img src="./img/w3schools.png" alt="logo html" width="35px"
+                    height="35px"></div>
+                <div class="col-10">
+                  <div class="row fw-semibold"><a href="https://www.w3schools.com/css/"
+                      class="p-0 link-underline link-underline-opacity-25 stretched-link">CSS Tutorial W3Schools</a>
+                  </div>
+                  <div class="row"><small class="p-0 verySmall text-body-secondary">Tutorial pas a pas amb exemples
+                      CSS</small></div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-2 align-self-center"><img src="./img/logo01.png" alt="logo html"></div>
+                <div class="col-10">
+                  <div class="row fw-semibold"><a href="#"
+                      class="p-0 link-underline link-underline-opacity-25 stretched-link">Mozilla Web Docs HTML</a>
+                  </div>
+                  <div class="row"><small class="p-0 verySmall text-body-secondary">Documentació amb exemples
+                      HTML</small></div>
+                </div>
+              </div>
             </li>
             <li class="list-group-item">
               <div class="row">
                 <div class="col-2 align-self-center ps-3"><img src="./img/logo02.png" alt="logo css"></div>
                 <div class="col-10">
-                  <div class="row fw-semibold"><a href="#" class="p-0 link-underline link-underline-opacity-25 stretched-link">Mozilla Web Docs CSS</a></div>
-                  <div class="row"><small class="p-0 verySmall text-body-secondary">Documentació amb exemples CSS</small></div>
+                  <div class="row fw-semibold"><a href="#"
+                      class="p-0 link-underline link-underline-opacity-25 stretched-link">Mozilla Web Docs CSS</a></div>
+                  <div class="row"><small class="p-0 verySmall text-body-secondary">Documentació amb exemples
+                      CSS</small></div>
                 </div>
               </div>
-              </li>
-              <li class="list-group-item">
-                <div class="row">
-                  <div class="col-2 align-self-center"><img src="./img/logo03.png" alt="logo codepen"></div>
-                  <div class="col-auto">
-                    <div class="row fw-semibold"><a href="#" class="p-0 link-underline link-underline-opacity-25 stretched-link">CodePen</a></div>
-                    <div class="row"><small class="p-0 verySmall text-body-secondary">Codi comunitat <span class="fst-italic">OpenSource</span> HTML/CSS/JS</small></div>
-                  </div>
-                  <div class="col-auto align-self-center">
-                    <p class="badge bg-info m-0">New</p>
-                  </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-2 align-self-center"><img src="./img/logo03.png" alt="logo codepen"></div>
+                <div class="col-auto">
+                  <div class="row fw-semibold"><a href="#"
+                      class="p-0 link-underline link-underline-opacity-25 stretched-link">CodePen</a></div>
+                  <div class="row"><small class="p-0 verySmall text-body-secondary">Codi comunitat <span
+                        class="fst-italic">OpenSource</span> HTML/CSS/JS</small></div>
                 </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-2 align-self-center"><img src="./img/logo05.png" alt="logo codepen" width="45px" height="45px"></div>
-                    <div class="col-auto">
-                      <div class="row fw-semibold"><a href="#" class="p-0 link-underline link-underline-opacity-25 stretched-link">GitHub</a></div>
-                      <div class="row"><small class="p-0 verySmall text-body-secondary">Servei de <span class="fst-italic">hosting</span> de repositoris Git</small></div>
-                    </div>
-                    <div class="col-auto align-self-center">
-                      <p class="badge bg-danger m-0"><i class="bi bi-git"></i></p>
-                    </div>
-                  </div>
-                  </li>
+                <div class="col-auto align-self-center">
+                  <p class="badge bg-info m-0">New</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-2 align-self-center"><img src="./img/logo05.png" alt="logo codepen" width="45px"
+                    height="45px"></div>
+                <div class="col-auto">
+                  <div class="row fw-semibold"><a href="#"
+                      class="p-0 link-underline link-underline-opacity-25 stretched-link">GitHub</a></div>
+                  <div class="row"><small class="p-0 verySmall text-body-secondary">Servei de <span
+                        class="fst-italic">hosting</span> de repositoris Git</small></div>
+                </div>
+                <div class="col-auto align-self-center">
+                  <p class="badge bg-danger m-0"><i class="bi bi-git"></i></p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -201,7 +284,8 @@
   </main>
   <footer class="navbar fixed-bottom bg-success" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://mastermind.ac/home"><small class="p-0 verySmall text-body-secondary">INS Carles Vallbona Curs 2023-24</small></a>
+      <a class="navbar-brand" href="https://mastermind.ac/home"><small class="p-0 verySmall text-body-secondary">INS
+          Carles Vallbona Curs 2023-24</small></a>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
