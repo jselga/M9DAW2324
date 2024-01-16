@@ -1,0 +1,68 @@
+// @if / @else if / @else example
+$light-theme: true;
+$dark-theme: false;
+
+header {
+  @if $light-theme == true {
+    background-color: #fff;
+    color: #000;
+  } @else if $dark-theme {
+    background-color: #000;
+    color: #fff;
+  } @else {
+    //Default theme
+    background-color: #aaa;
+    color: #444;
+  }
+}
+
+// @while example
+$num: 1;
+$color-list: #0f0, #00f, orange, #ccc;
+
+@while $num < 5 {
+  td:nth-child(#{$num}) {
+    color: #f00;
+    background-color: nth($color-list, $num);
+  }
+  $num: $num + 1;
+}
+// @for example
+@for $i from 1 to 5 {
+  p:nth-of-type(#{$i}) {
+    color: #f00;
+    background-color: nth($color-list, $i);
+  }
+}
+
+// @each example con lista
+$usuarios: pepe, lola, manuel;
+
+@each $u in $usuarios {
+  .profile-#{$u} {
+    background: image-url("img/#{$u}.png") no repeat;
+  }
+}
+
+// @each example with maps
+$mapa: (
+  pepe: "pepe.png",
+  lola: "lola.png",
+  manuel: "manuel.png"
+);
+
+@each $u, $v in $mapa {
+  .perfil-#{$u} {
+    background: image-url("img/#{$v}") no repeat;
+  }
+}
+
+//User defined function example
+@function anchura-col($cols, $total) {
+  @return percentage(calc($cols/$total));
+}
+
+.sidebar {
+  background-color: #00f;
+  width: anchura-col(3, 10);
+}

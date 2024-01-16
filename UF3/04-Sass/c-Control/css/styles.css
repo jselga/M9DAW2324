@@ -1,0 +1,75 @@
+header {
+  background-color: #fff;
+  color: #000;
+}
+
+td:nth-child(1) {
+  color: #f00;
+  background-color: #0f0;
+}
+
+td:nth-child(2) {
+  color: #f00;
+  background-color: #00f;
+}
+
+td:nth-child(3) {
+  color: #f00;
+  background-color: orange;
+}
+
+td:nth-child(4) {
+  color: #f00;
+  background-color: #ccc;
+}
+
+p:nth-of-type(1) {
+  color: #f00;
+  background-color: #0f0;
+}
+
+p:nth-of-type(2) {
+  color: #f00;
+  background-color: #00f;
+}
+
+p:nth-of-type(3) {
+  color: #f00;
+  background-color: orange;
+}
+
+p:nth-of-type(4) {
+  color: #f00;
+  background-color: #ccc;
+}
+
+.profile-pepe {
+  background: image-url("img/pepe.png") no repeat;
+}
+
+.profile-lola {
+  background: image-url("img/lola.png") no repeat;
+}
+
+.profile-manuel {
+  background: image-url("img/manuel.png") no repeat;
+}
+
+.perfil-pepe {
+  background: image-url("img/pepe.png") no repeat;
+}
+
+.perfil-lola {
+  background: image-url("img/lola.png") no repeat;
+}
+
+.perfil-manuel {
+  background: image-url("img/manuel.png") no repeat;
+}
+
+.sidebar {
+  background-color: #00f;
+  width: 30%;
+}
+
+/*# sourceMappingURL=styles.css.map */
