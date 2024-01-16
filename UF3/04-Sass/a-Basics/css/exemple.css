@@ -1,0 +1,37 @@
+.header {
+  background-color: #d4cbcb;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #f00;
+}
+a:visited {
+  color: #00f;
+}
+a:active {
+  color: #0f0;
+}
+
+.btn-error {
+  background-color: #f00;
+  border-radius: 10px;
+  border: none;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  background-image: url("../img/proceso.png");
+  height: 250px;
+  width: 500px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/*# sourceMappingURL=exemple.css.map */

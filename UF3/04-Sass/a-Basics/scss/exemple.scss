@@ -1,0 +1,51 @@
+// Variables de colors
+$grey: #d4cbcb;
+$header-background : $grey;
+$link-normal: #000;
+$link-hover: #f00;
+$link-visited: #00f;
+$link-active: #0f0;
+
+.header {
+    background-color: $header-background;
+}
+
+//Nesting bàsic
+a {
+    color: $link-normal;
+    text-decoration: none;
+    &:hover {
+        color: $link-hover;
+    }
+    &:visited {
+        color: $link-visited;
+    }
+    &:active {
+        color: $link-active;
+    }
+}
+// Interpolació
+$button-type: "error";
+$btn-color : #f00;
+
+.btn-#{$button-type} {
+    background-color:  $btn-color;
+    border-radius: 10px;
+    border:none;
+    height: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+$fondo :  "../img/proceso.png";
+
+.container {
+  
+  background-image: url('#{$fondo}');
+  height: 250px;
+  width: 500px;
+  
+ }
+ h1{
+    font-size: 2.5rem;
+ }
