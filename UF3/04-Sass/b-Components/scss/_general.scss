@@ -1,0 +1,31 @@
+$text-color: #3f3f3f;
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    background-color: azure;
+    min-height: 100vh;
+}
+h1{
+    margin: 0;
+   @include format-text();
+}
+p{
+    @include format-text(#666666);
+}
+.llistat{
+    width: 10rem;
+    background-color: aquamarine;
+    padding: 0.5rem;
+    ul{
+        margin: 0 0.5rem;
+        li{
+            list-style: none;
+            &:hover{
+                color:white;
+            }
+        }
+    }
+}
