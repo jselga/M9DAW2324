@@ -1,0 +1,10 @@
+ul.square {
+    list-style: square outside url("../img/logo04.png");
+  }
+  .verySmall{
+    font-size: 0.8em;
+}
+.separated{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}

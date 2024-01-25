@@ -1,0 +1,20 @@
+$deeppurlple: #311b92;
+$primary: $deeppurlple;
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+// Create your own map
+
+// Create your own map
+$custom-colors: (
+  "myRed": #900,
+  "myBlue":#009,
+  "myGreen":#090
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+// Merge the maps
+
+
+$theme-colors: map-merge($custom-colors,$theme-colors);
+@import '../node_modules/bootstrap/scss/bootstrap';
